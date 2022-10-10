@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="logoToolsQA" value="./imagenes/logoToolsQA.png"/>
+    <parameter name="rutaImagenReporteMER" value="./imagenes/logoMER.png"/>
+    <parameter name="rutaOutput" value="./output/"/>
+    <parameter name="logoMercury" value="./imagenes/logoMercury.png"/>
+    <parameter name="url" value="https://www.mercadolibre.com.co/"/>
+    <classes>
+      <class name="RunPruebas.RunPrueba">
+        <methods>
+          <include name="agregarAlCarrito" invocation-numbers="0"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- RunPruebas.RunPrueba -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
